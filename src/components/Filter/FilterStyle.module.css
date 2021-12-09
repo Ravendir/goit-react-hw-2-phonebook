@@ -1,0 +1,9 @@
+.filterContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filterInput {
+  margin-top: 10px;
+}

@@ -1,0 +1,32 @@
+.label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formInput {
+  margin-top: 10px;
+  border-radius: 2px;
+  border: 1px solid grey;
+}
+
+.formButton {
+  border-radius: 5px;
+  padding: 3px 4px 3px 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.formButton:hover,
+.formButton:focus {
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5),
+    1px 1px 5px rgba(255, 255, 255, 1);
+}
