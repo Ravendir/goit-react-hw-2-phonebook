@@ -65,9 +65,7 @@ export default class App extends Component {
       <>
         <ContactForm onSubmit={this.addContact} />
         <h2 className={styles.contactForm}>Contacts</h2>
-        {filterContacts.length > 1 && (
-          <Filter value={filter} onChangeFilter={this.changeFilter} />
-        )}
+        <Filter value={filter} onChangeFilter={this.changeFilter} />
         {filterContacts.length ? (
           <ContactList
             contacts={filterContacts}
@@ -75,7 +73,7 @@ export default class App extends Component {
           />
         ) : (
           <p className={styles.contactForm}>
-            Your phonebook is empty. Please add contact.
+            Nothing found. Add contact or clear filter.
           </p>
         )}
       </>
